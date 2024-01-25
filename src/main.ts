@@ -1,9 +1,6 @@
 let turno: number = 1;
 
-const numeroPantalla = document.getElementsByClassName("numero-turno")[0];
-// 
-
-console.log(typeof numeroPantalla);
+const numeroPantalla = document.getElementById("numero-turno") as HTMLHeadingElement;
 
 function sumaTurno(): void {
   turno++;
@@ -37,7 +34,7 @@ botonReset.addEventListener("click", () => reset());
 
 const valorInput = document.getElementById("personalizado") as HTMLInputElement;
 
-function cambiarNumero() {
+function cambiarNumero(): void {
   turno = parseInt(valorInput.value);
   numeroPantalla.innerHTML = turno.toString().padStart(2, "0");
 }
