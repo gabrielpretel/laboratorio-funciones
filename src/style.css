@@ -28,6 +28,7 @@ body {
   display: flex;
   place-items: center;
   justify-content: center;
+  flex-direction: column;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -72,12 +73,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #cc8e35;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s ease-in;
+  margin-left: 5px;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #ccae62;
 }
 button:focus,
 button:focus-visible {
@@ -122,4 +124,12 @@ button:focus-visible {
   margin: 0;
   text-align: center;
   color: #1a1a1a;
+}
+
+.panel{
+  padding: 20px;
+}
+
+.personalizado{
+  padding: 20px;
 }
